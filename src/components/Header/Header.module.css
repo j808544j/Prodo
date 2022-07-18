@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 8px 0px 8px 0px;
+  border-bottom: 1px solid gray;
+}
+
+.searchInput {
+  width: min(500px, 50vw);
+  padding: 3px;
+  border-radius: 30px;
+  border-color: hsl(0, 0%, 88%);
+  background-color: hsl(0, 0%, 96%);
+}
+
+form {
+  display: inline-flex;
+}
+
+.ulSearchResults {
+  position: absolute;
+  background-color: hsl(0, 0%, 95%);
+  width: min(500px, 50vw);
+  padding: 0;
+  top: 35px;
+  border-radius: 10px;
+}
+
+.liSearchResultsItem {
+  border-bottom: 1px solid hsl(30, 3%, 73%);
+  margin: 5px;
+  padding: 5px;
+  list-style: none;
+}

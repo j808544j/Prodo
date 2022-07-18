@@ -1,0 +1,45 @@
+.mainSection {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid hsl(0, 7%, 73%);
+  padding: 0;
+  margin: 0;
+}
+
+.productCard {
+  border: 0.5px solid hsl(0, 0%, 93%);
+  width: 200px;
+  height: 320px;
+  align-self: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productTitle,
+.productPrice,
+.productRating {
+  text-align: center;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.productImage {
+  display: block;
+  margin: 10px auto;
+}
+
+.productList {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}

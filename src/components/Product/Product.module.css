@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.image {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.text {
+  margin: 30px;
+}
+
+.article {
+  width: 50vw;
+}

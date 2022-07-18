@@ -1,0 +1,41 @@
+.logoh1 {
+  text-align: center;
+}
+
+.navh1 {
+  text-decoration: none;
+}
+
+.loginSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: hsl(0, 0%, 97%);
+}
+
+.loginFormInput {
+  font-size: large;
+  padding: 3px;
+  margin: 5px;
+}
+
+.formButton {
+  padding: 5px;
+  margin: 5px;
+}
+
+.Button {
+  padding: 5px;
+  margin: 10px;
+}
