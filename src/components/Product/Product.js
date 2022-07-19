@@ -23,23 +23,22 @@ function Product({ cachedProducts }) {
                 (prod) => prod.id === parseInt(param.productId)
               ).title
             }
-            width="400px"
-            height="400px"
+            width="300px"
+            height="300px"
           />
 
           <article className={styles.article}>
             <h1 className={styles.text}>
-              {" $" +
+              {"Price : $" +
                 cachedProducts.find(
                   (prod) => prod.id === parseInt(param.productId)
                 ).price}
             </h1>
             <h1 className={styles.text}>
-              {
+              {"Rating : " +
                 cachedProducts.find(
                   (prod) => prod.id === parseInt(param.productId)
-                ).rating.rate
-              }
+                ).rating.rate}
               {"(" +
                 cachedProducts.find(
                   (prod) => prod.id === parseInt(param.productId)
@@ -47,13 +46,12 @@ function Product({ cachedProducts }) {
                 ")"}
             </h1>
             <h3 className={styles.text}>
-              {
+              {"Title : " +
                 cachedProducts.find(
                   (prod) => prod.id === parseInt(param.productId)
-                ).title
-              }
+                ).title}
             </h3>
-            <p style={{ margin: "30px" }}>
+            <p className={styles.description}>
               {
                 cachedProducts.find(
                   (prod) => prod.id === parseInt(param.productId)

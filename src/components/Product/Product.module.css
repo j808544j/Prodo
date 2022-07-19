@@ -1,5 +1,21 @@
+@media screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .article {
+    text-align: center;
+  }
+}
+
 .main {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   margin: 20px;
@@ -7,13 +23,16 @@
 
 .image {
   border: 1px solid gray;
-  padding: 20px;
+  width: clamp(100px, 300px, 400px);
+  height: clamp(100px, 300px, 400px);
+  padding: 10px;
 }
 
 .text {
   margin: 30px;
 }
 
-.article {
-  width: 50vw;
+.description {
+  font-size: larger;
+  margin: 20px;
 }

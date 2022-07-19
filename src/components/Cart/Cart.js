@@ -16,7 +16,6 @@ function Cart({ cachedLoggedUser, cachedProducts, cachedUsers }) {
     );
     const priceArray = products.map((p) => p.price);
     const cartTotal = priceArray.reduce((prev, next) => prev + next, 0);
-
     return (
       <main>
         <Link to="/">
@@ -45,6 +44,22 @@ function Cart({ cachedLoggedUser, cachedProducts, cachedUsers }) {
           </ul>
         </section>
       </main>
+    );
+  }
+
+  if (
+    cachedLoggedUser !== null &&
+    cachedProducts !== null &&
+    cachedUsers !== null &&
+    localStorage.getItem("carts") === null
+  ) {
+    return (
+      <>
+        <Link to="/">
+          <h1>Prodo</h1>
+        </Link>
+        <h1>Cart is empty add some items to it</h1>
+      </>
     );
   }
 
